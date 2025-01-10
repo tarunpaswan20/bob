@@ -113,8 +113,34 @@ body {
 
  
 .carousel-inner img {
+  filter: brightness(50%);
   object-fit: cover; /* Ensures the images fill their container without distortion */
   height: 800px; /* Adjust based on your preference */
+}
+.custom-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff; /* Makes text stand out */
+  z-index: 2;
+}
+.custom-caption h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds shadow for better visibility */
+  margin-bottom: 1rem;
+}
+
+.custom-caption p {
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+.custom-caption .btn {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  font-size: 1.2rem;
 }
 @media screen and (max-width: 768px) {
   .carousel-inner img {
@@ -154,4 +180,63 @@ body {
 .custom-card span {
   font-size: 1.5rem;
   color: #999; /* Subtle "+" sign */
+}
+#gallery-section {
+  background-color: #f8f9fa;
+}
+
+#theme-dropdown {
+  font-size: 1.1rem;
+  border-radius: 20px;
+  padding: 10px 15px;
+  outline: none;
+}
+
+#gallery-grid .theme img {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#gallery-grid .theme img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+.poster-img {
+  border-radius: 10px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.poster-img:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 15px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.position-relative:hover .overlay-text {
+  background: rgba(227, 183, 233, 0.8); /* Light Purple */
+}
+
+/* Modal Image Styling */
+.carousel-inner img {
+  border-radius: 10px;
+  object-fit: cover;
+  max-height: 80vh;
+}
+
+/* Caption Style */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
 }
