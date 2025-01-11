@@ -27,109 +27,92 @@
     </div>
   </nav>
 
-  <!-- Slideshow Section -->
-  <section>
-    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
-          aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-      </div>
+  <!-- Hero Section with Carousel -->
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <!-- Carousel Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+        aria-current="true"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+    </div>
 
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="image1.jpg" class="d-block w-100" alt="Slide 1">
-          <div class="carousel-caption custom-caption">
-            <h1>Crafting Memorable Events</h1>
-            <p>Let us handle your event planning</p>
-            <a href="#" class="btn btn-success btn-lg">View Services</a>
+    <!-- Carousel Inner -->
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="hero-slide d-flex align-items-center"
+          style="background: url('https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg') no-repeat center center/cover; height: 600px;">
+          <div class="container text-center text-white">
+            <h1 class="display-4 fw-bold">Welcome to Eventastic</h1>
+            <p class="lead mt-3">Transforming dreams into reality, one event at a time.</p>
+            <a href="#contact" class="btn btn-primary btn-lg mt-4">Plan Your Event</a>
           </div>
         </div>
-        <div class="carousel-item">
-          <img src="image2.jpg" class="d-block w-100" alt="Slide 2">
-        </div>
-        <div class="carousel-item">
-          <img src="image6.jpg" class="d-block w-100" alt="Slide 3">
-        </div>
-        <div class="carousel-item">
-          <img src="image12.png" class="d-block w-100" alt="Slide 4">
-        </div>
       </div>
 
- 
-
-      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="hero-slide d-flex align-items-center"
+          style="background: url('pool-party-3.jpg') no-repeat center center/cover; height: 600px;">
+          <div class="container text-center text-white">via.placeh
+            <h1 class="display-4 fw-bold">Celebrate With Us</h1>
+            <p class="lead mt-3">Your perfect event starts here.</p>
+            <a href="#contact" class="btn btn-primary btn-lg mt-4">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="hero-slide d-flex align-items-center"
+          style="background: url('halloween-party-2.jpg') no-repeat center center/cover; height: 600px;">
+          <div class="container text-center text-white">
+            <h1 class="display-4 fw-bold">Make Every Moment Count</h1>
+            <p class="lead mt-3">Premium events, unforgettable memories.</p>
+            <a href="" class="btn btn-primary btn-lg mt-4">Learn More</a>
+          </div>
+        </div>
+      </div>
     </div>
-  </section>
-  <section class="welcome-section bg-light py-5" id="welcome-section">
+
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Showcase Section -->
+  <div class="showcase-section text-center py-5">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-          <h1 class="display-4 fw-bold">Welcome to Bob the Builder</h1>
-          <p class="lead mt-3">The Best Event Management Company</p>
-          <hr class="my-4">
-        </div>
-      </div>
-      <!-- Card Grid -->
-    <div class="row mt-5 justify-content-center">
-      <!-- Experience Card -->
-      <div class="col-md-3 col-sm-6 mb-4">
-        <div class="card custom-card h-100 text-center count-card">
-          <div class="card-body">
-            <h5 class="card-title fw-bold">Experiences</h5>
-            <h2 class="fw-bold">
-              <span class="counter" data-target="20">0</span><span class="text-muted">+</span>
-            </h2>
-          </div>
-        </div>
-      </div>
-      <!-- Corporate Events Card -->
-      <div class="col-md-3 col-sm-6 mb-4">
-        <div class="card custom-card h-100 text-center count-card">
-          <div class="card-body">
-            <h5 class="card-title fw-bold">Corporate Events</h5>
-            <h2 class="fw-bold">
-              <span class="counter" data-target="300">0</span><span class="text-muted">+</span>
-            </h2>
-          </div>
-        </div>
-      </div>
-      <!-- Wedding Card -->
-      <div class="col-md-3 col-sm-6 mb-4">
-        <div class="card custom-card h-100 text-center count-card">
-          <div class="card-body">
-            <h5 class="card-title fw-bold">Wedding</h5>
-            <h2 class="fw-bold">
-              <span class="counter" data-target="400">0</span><span class="text-muted">+</span>
-            </h2>
-          </div>
-        </div>
-      </div>
-      <!-- Musical Concerts Card -->
-      <div class="col-md-3 col-sm-6 mb-4">
-        <div class="card custom-card h-100 text-center count-card">
-          <div class="card-body">
-            <h5 class="card-title fw-bold">Musical Concerts</h5>
-            <h2 class="fw-bold">
-              <span class="counter" data-target="200">0</span><span class="text-muted">+</span>
-            </h2>
-          </div>
-        </div>
+      <img src="pool-party-2.jpg" class="img-fluid mb-4 shadow" alt="Event Showcase"
+        style="width: 800px; height: 400px; object-fit: cover;">
+      <h2 class="fw-bold">Creating Memorable Moments</h2>
+      <p class="mt-3">From weddings to corporate events, we handle it all with style and creativity.</p>
+    </div>
+  </div>
+
+  <!-- Highlight Section -->
+  <div class="highlight-section bg-light py-5">
+    <div class="container d-md-flex align-items-center">
+      <img src="disney-party-1.jpg" class="img-fluid me-md-4 mb-4 mb-md-0 shadow" alt="Highlight" 
+      style="width: 400px; height: 300px; object-fit: cover;">
+      <div>
+        <h3 class="fw-bold">Why Choose Us?</h3>
+        <p>We are committed to delivering exceptional services tailored to your specific needs. With meticulous
+          attention to detail and a passion for creating beautiful experiences, we ensure your events are truly
+          unforgettable.</p>
       </div>
     </div>
-    </div>
-    <div><h1>Hey there</h1></div>
+  </div>
   </section>
-  
+
+
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
