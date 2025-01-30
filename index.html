@@ -6,33 +6,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Event Management</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <style>
+    body {
+      background-image: url('https://images.pexels.com/photos/695644/pexels-photo-695644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+      background-size: cover; /* Ensures the image covers the entire body */
+      background-position: center center; /* Centers the image */
+      background-attachment: fixed; /* Keeps the image fixed during scrolling */
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      /* This ensures the text is readable on top of the background */
+    }
+
+    
+
+  
+  </style>
 </head>
 
 <body>
+ 
+
   <!-- Custom Navbar -->
   <nav class="custom-navbar">
-    <div class="custom-navbar-container">
-      <a href="#" class="custom-navbar-brand">Bob the Builder</a>
+    <nav class="custom-navbar">
+      <div class="custom-navbar-container d-flex align-items-center justify-content-between">
+       <!-- Updated Navbar Branding -->
+      <!-- Updated Navbar Branding -->
+<a href="#" class="custom-navbar-brand">
+  <span style="color: #000000; font-size: 1.8rem; margin-right: 5px;">Take</span>
+  <img src="https://img.icons8.com/laces/64/wing.png" alt="Left Wing Icon" class="wing-reflection">
+  <img src="https://img.icons8.com/laces/64/wing.png" alt="Right Wing Icon" class="wing-original">
+  <span style="color: #000000; font-size: 1.8rem; margin-left: 5px;">Event</span>
+</a>
+
+      
       <button id="dropdown-button" class="custom-dropdown-button" aria-label="Menu">&#9776;</button>
       <ul class="custom-navbar-links">
         <li><a href="#" id="home-button">Home</a></li>
         <li><a href="gallery.html" id="Gallery-button">Gallery</a></li>
         <li><a href="#" id="whatwedobutton">What We Do</a></li>
         <li><a href="contactus.html" id="contact-us">Contact Us</a></li>
-
       </ul>
     </div>
   </nav>
+   
+ <!-- Social Media Icons (WhatsApp and Instagram) -->
+<div id="social-icons">
+  <!-- WhatsApp Icon -->
+  <a href="https://wa.me/+918800678586" target="_blank" class="social-icon">
+    <img width="50" height="50" src="https://img.icons8.com/bubbles/50/whatsapp.png" alt="WhatsApp">
+  </a>
+  <!-- Instagram Icon -->
+  <a href="https://www.instagram.com/take_wing_event" target="_blank" class="social-icon">
+    <img width="50" height="50" src="https://img.icons8.com/clouds/100/instagram-new--v3.png" alt="Instagram">
+  </a>
+</div>
+
 
   <!-- Hero Section with Carousel -->
   <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <!-- Carousel Indicators -->
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
-        aria-current="true"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
       <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
       <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
     </div>
@@ -44,21 +84,20 @@
         <div class="hero-slide d-flex align-items-center"
           style="background: url('https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg') no-repeat center center/cover; height: 600px;">
           <div class="container text-center text-white">
-            <h1 class="display-4 fw-bold">Welcome to Eventastic</h1>
-            <p class="lead mt-3">Transforming dreams into reality, one event at a time.</p>
-            <a href="#contact" class="btn btn-primary btn-lg mt-4">Plan Your Event</a>
+            <h1 class="display-4 fw-bold" data-aos="fade-up">Welcome to Eventastic</h1>
+            <p class="lead mt-3" data-aos="fade-up" data-aos-delay="300">Transforming dreams into reality, one event at a time.</p>
+            <a href="#contact" class="btn btn-primary btn-lg mt-4" data-aos="fade-up" data-aos-delay="500">Plan Your Event</a>
           </div>
         </div>
       </div>
-
       <!-- Slide 2 -->
       <div class="carousel-item">
         <div class="hero-slide d-flex align-items-center"
           style="background: url('pool-party-3.jpg') no-repeat center center/cover; height: 600px;">
-          <div class="container text-center text-white">via.placeh
-            <h1 class="display-4 fw-bold">Celebrate With Us</h1>
-            <p class="lead mt-3">Your perfect event starts here.</p>
-            <a href="#contact" class="btn btn-primary btn-lg mt-4">Contact Us</a>
+          <div class="container text-center text-white">
+            <h1 class="display-4 fw-bold" data-aos="fade-up">Celebrate With Us</h1>
+            <p class="lead mt-3" data-aos="fade-up" data-aos-delay="300">Your perfect event starts here.</p>
+            <a href="#contact" class="btn btn-primary btn-lg mt-4" data-aos="fade-up" data-aos-delay="500">Contact Us</a>
           </div>
         </div>
       </div>
@@ -67,9 +106,9 @@
         <div class="hero-slide d-flex align-items-center"
           style="background: url('halloween-party-2.jpg') no-repeat center center/cover; height: 600px;">
           <div class="container text-center text-white">
-            <h1 class="display-4 fw-bold">Make Every Moment Count</h1>
-            <p class="lead mt-3">Premium events, unforgettable memories.</p>
-            <a href="" class="btn btn-primary btn-lg mt-4">Learn More</a>
+            <h1 class="display-4 fw-bold" data-aos="fade-up">Make Every Moment Count</h1>
+            <p class="lead mt-3" data-aos="fade-up" data-aos-delay="300">Premium events, unforgettable memories.</p>
+            <a href="" class="btn btn-primary btn-lg mt-4" data-aos="fade-up" data-aos-delay="500">Learn More</a>
           </div>
         </div>
       </div>
@@ -86,14 +125,16 @@
     </button>
   </div>
 
-
   <!-- Showcase Section -->
   <div class="showcase-section text-center py-5">
     <div class="container">
+      <!-- Image Animation -->
       <img src="pool-party-2.jpg" class="img-fluid mb-4 shadow" alt="Event Showcase"
-        style="width: 800px; height: 400px; object-fit: cover;">
-      <h2 class="fw-bold">Creating Memorable Moments</h2>
-      <p class="mt-3">From weddings to corporate events, we handle it all with style and creativity.</p>
+        style="width: 800px; height: 400px; object-fit: cover;" data-aos="fade-up">
+        
+      <!-- Text Animation -->
+      <h2 class="fw-bold" data-aos="fade-up" data-aos-delay="300">Creating Memorable Moments</h2>
+      <p class="mt-3" data-aos="fade-up" data-aos-delay="500">From weddings to corporate events, we handle it all with style and creativity.</p>
     </div>
   </div>
 
@@ -101,20 +142,61 @@
   <div class="highlight-section bg-light py-5">
     <div class="container d-md-flex align-items-center">
       <img src="disney-party-1.jpg" class="img-fluid me-md-4 mb-4 mb-md-0 shadow" alt="Highlight" 
-      style="width: 400px; height: 300px; object-fit: cover;">
+      style="width: 400px; height: 300px; object-fit: cover;" data-aos="fade-up">
       <div>
-        <h3 class="fw-bold">Why Choose Us?</h3>
-        <p>We are committed to delivering exceptional services tailored to your specific needs. With meticulous
+        <h3 class="fw-bold" data-aos="fade-up" data-aos-delay="300">Why Choose Us?</h3>
+        <p data-aos="fade-up" data-aos-delay="500">We are committed to delivering exceptional services tailored to your specific needs. With meticulous
           attention to detail and a passion for creating beautiful experiences, we ensure your events are truly
           unforgettable.</p>
       </div>
     </div>
   </div>
-  </section>
-
 
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+<!-- Footer Section -->
+<footer class="bg-dark text-light pt-5 pb-3" data-aos="fade-up">
+  <div class="container">
+    <div class="row">
+      <!-- Company Info -->
+      <div class="col-md-4 mb-4" data-aos="fade-right" data-aos-delay="200">
+        <h5 class="text-uppercase fw-bold">Bob the Builder</h5>
+        <p>Your trusted partner in event management, creating unforgettable experiences.</p>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+        <h5 class="text-uppercase fw-bold">Contact Us</h5>
+        <ul class="list-unstyled">
+          <li><i class="bi bi-envelope"></i> Email: <a href="mailto:contact@bobthebuilder.com" class="text-light">contact@bobthebuilder.com</a></li>
+          <li><i class="bi bi-geo-alt"></i> Address: South Ex, New Delhi, India</li>
+          <li><i class="bi bi-telephone"></i> Phone: +91 1234567890</li>
+        </ul>
+      </div>
+
+      <!-- Google Map -->
+      <div class="col-md-4" data-aos="fade-left" data-aos-delay="400">
+        <h5 class="text-uppercase fw-bold">Our Location</h5>
+        <div class="ratio ratio-16x9">
+          <!-- Replace the src with your actual Google Maps embed link -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14029.368918350263!2d77.2234219!3d28.57075665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3914dc2fa57%3A0x24dd0c046e937580!2sSouth%20Ex%2C%20New%20Delhi%2C%20India!5e0!3m2!1sen!2sin!4v1700000000000" 
+            style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="text-center mt-4" data-aos="fade-up" data-aos-delay="500">
+      <p class="mb-0">© 2025 Bob the Builder. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
 </body>
 
 </html>
