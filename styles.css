@@ -240,3 +240,89 @@ body {
   padding: 10px 20px;
   border-radius: 5px;
 }
+.hero-slide {
+  position: relative;
+  overflow: hidden;
+}
+.hero-slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the opacity */
+  z-index: 1;
+}
+.hero-slide .container {
+  position: relative;
+  z-index: 2;
+}
+.contact-section {
+  background-color: #f9f9f9;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.contact-section p {
+  font-size: 1.1rem;
+}
+
+.map-responsive iframe {
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+/* Floating Social Icons Container */
+#social-icons {
+  position: fixed;
+  right: 20px;
+  bottom: 50%;
+  transform: translateY(50%);
+  display: flex;
+  flex-direction: column; /* Arrange icons vertically */
+  gap: 10px; /* Add spacing between icons */
+  z-index: 1000; /* Keep icons above other elements */
+}
+
+/* General Styles for Social Icons */
+.social-icon {
+  display: block;
+  padding: 5px; /* Add padding around the image */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 50%; /* Makes icons look rounded */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect for Social Icons */
+.social-icon:hover {
+  transform: scale(1.1); /* Slightly enlarge the icon */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.custom-navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Ensures proper alignment */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.wing-original, .wing-reflection {
+  width: 40px; /* Adjust size for better balance */
+}
+
+.wing-reflection {
+  transform: scaleX(-1); /* Flip the image horizontally */
+}
+
+body {
+  background-color: #000; /* Optional: Enhance visibility with a darker background */
+}
+
+.custom-navbar-brand span {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Adds a subtle glow for better visibility */
+}
+
