@@ -1,114 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Event Management</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- AOS CSS for Animations -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
+  <style>
+    /* What We Do Section */
+    .what-we-do {
+      background-color: #f8f9fa;
+      padding: 60px 0;
+    }
+
+    .what-we-do h2 {
+      font-weight: 700;
+      color: #343a40;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .service-card {
+      background: #fff;
+      border: 1px solid #dee2e6;
+      border-radius: 10px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .service-card img {
+      width: 100%;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    .service-card .card-body {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .service-card h5 {
+      font-weight: 600;
+      color: #007bff;
+      margin-bottom: 15px;
+    }
+
+    .service-card p {
+      color: #6c757d;
+      font-size: 14px;
+    }
+  </style>
 </head>
+
 <body>
-   <!-- Custom Navbar -->
-   <nav class="custom-navbar">
-    <div class="custom-navbar-container">
-      <a href="#" class="custom-navbar-brand">Bob the Builder</a>
+  <!-- Custom Navbar -->
+  <nav class="custom-navbar">
+    <nav class="custom-navbar">
+      <div class="custom-navbar-container d-flex align-items-center justify-content-between">
+       <!-- Updated Navbar Branding -->
+      <!-- Updated Navbar Branding -->
+<a href="#" class="custom-navbar-brand">
+  <span style="color: #000000; font-size: 1.8rem; margin-right: 5px;">Take</span>
+  <img src="https://img.icons8.com/laces/64/wing.png" alt="Left Wing Icon" class="wing-reflection">
+  <img src="https://img.icons8.com/laces/64/wing.png" alt="Right Wing Icon" class="wing-original">
+  <span style="color: #000000; font-size: 1.8rem; margin-left: 5px;">Event</span>
+</a>
+
+      
       <button id="dropdown-button" class="custom-dropdown-button" aria-label="Menu">&#9776;</button>
       <ul class="custom-navbar-links">
         <li><a href="#" id="home-button">Home</a></li>
         <li><a href="gallery.html" id="Gallery-button">Gallery</a></li>
-
         <li><a href="#" id="whatwedobutton">What We Do</a></li>
         <li><a href="contactus.html" id="contact-us">Contact Us</a></li>
       </ul>
     </div>
   </nav>
-  <section id="what-we-do" class="py-5">
+
+  <!-- "What We Do" Section -->
+  <section class="what-we-do">
     <div class="container">
-      <!-- Section Heading -->
-      <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-          <h2 class="display-5 fw-bold">What We Do</h2>
-          <p class="lead mt-3">
-            At <strong>Bob the Builder</strong>, we bring dreams to life with unique, unforgettable events tailored to perfection.
-          </p>
-          <hr class="my-4">
-        </div>
-      </div>
-      
-      <!-- Services Cards -->
-      <div class="row text-center mt-5">
+      <h2 data-aos="fade-up">What We Do</h2>
+      <div class="row g-4">
         <!-- Service 1 -->
-        <div class="col-md-4">
-          <div class="card shadow-sm border-0">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card">
+            <img src="snow-party-2.jpg" alt="Event Planning">
             <div class="card-body">
-              <i class="bi bi-gem fs-1 text-primary"></i>
-              <h5 class="card-title mt-3 fw-bold">Corporate Events</h5>
-              <p class="card-text">We plan professional, impactful corporate events that leave a lasting impression.</p>
+              <h5>Birthday party</h5>
+              <p>We craft and execute memorable events tailored to your needs, from corporate meetings to weddings.</p>
             </div>
           </div>
         </div>
         <!-- Service 2 -->
-        <div class="col-md-4">
-          <div class="card shadow-sm border-0">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card">
+            <img src="snow-party-3.jpg" alt="Decoration">
             <div class="card-body">
-              <i class="bi bi-heart fs-1 text-danger"></i>
-              <h5 class="card-title mt-3 fw-bold">Weddings</h5>
-              <p class="card-text">Let us make your big day magical with personalized wedding planning.</p>
+              <h5>corporate events</h5>
+              <p>Our creative team designs stunning decorations to create the perfect ambiance for your celebration.</p>
             </div>
           </div>
         </div>
         <!-- Service 3 -->
-        <div class="col-md-4">
-          <div class="card shadow-sm border-0">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-card">
+            <img src="snow-party-4.jpg" alt="Catering">
             <div class="card-body">
-              <i class="bi bi-music-note-list fs-1 text-success"></i>
-              <h5 class="card-title mt-3 fw-bold">Concerts</h5>
-              <p class="card-text">From small gigs to large concerts, we handle every detail of your musical events.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Additional Services -->
-      <div class="row text-center mt-5">
-        <!-- Service 4 -->
-        <div class="col-md-4">
-          <div class="card shadow-sm border-0">
-            <div class="card-body">
-              <i class="bi bi-balloon fs-1 text-info"></i>
-              <h5 class="card-title mt-3 fw-bold">Birthday Parties</h5>
-              <p class="card-text">Turn birthdays into extraordinary celebrations with our planning expertise.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Service 5 -->
-        <div class="col-md-4">
-          <div class="card shadow-sm border-0">
-            <div class="card-body">
-              <i class="bi bi-stars fs-1 text-warning"></i>
-              <h5 class="card-title mt-3 fw-bold">Award Ceremonies</h5>
-              <p class="card-text">We design award ceremonies that sparkle with glamour and sophistication.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Service 6 -->
-        <div class="col-md-4">
-          <div class="card shadow-sm border-0">
-            <div class="card-body">
-              <i class="bi bi-tree fs-1 text-secondary"></i>
-              <h5 class="card-title mt-3 fw-bold">Outdoor Events</h5>
-              <p class="card-text">Seamless outdoor event planning for celebrations under the open sky.</p>
+              <h5>decorations</h5>
+              <p>Delight your guests with our exquisite food and beverages, crafted to perfection.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  
+
   <script src="script.js"></script>
+
+  <!-- AOS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    // Initialize AOS animations
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
+
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Footer Section -->
+<footer class="bg-dark text-light pt-5 pb-3">
+  <div class="container">
+    <div class="row">
+      <!-- Company Info -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase fw-bold">Bob the Builder</h5>
+        <p>Your trusted partner in event management, creating unforgettable experiences.</p>
+      </div>
+      
+      <!-- Contact Info -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase fw-bold">Contact Us</h5>
+        <ul class="list-unstyled">
+          <li><i class="bi bi-envelope"></i> Email: <a href="mailto:contact@bobthebuilder.com" class="text-light">contact@bobthebuilder.com</a></li>
+          <li><i class="bi bi-geo-alt"></i> Address: South Ex, New Delhi, India</li>
+          <li><i class="bi bi-telephone"></i> Phone: +91 1234567890</li>
+        </ul>
+      </div>
+
+      <!-- Google Map -->
+      <div class="col-md-4">
+        <h5 class="text-uppercase fw-bold">Our Location</h5>
+        <div class="ratio ratio-16x9">
+          <!-- Replace the src with your actual Google Maps embed link -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14029.368918350263!2d77.2234219!3d28.57075665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3914dc2fa57%3A0x24dd0c046e937580!2sSouth%20Ex%2C%20New%20Delhi%2C%20India!5e0!3m2!1sen!2sin!4v1700000000000" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="text-center mt-4">
+      <p class="mb-0">© 2025 Bob the Builder. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
 </body>
+
 </html>
