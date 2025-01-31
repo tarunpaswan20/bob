@@ -12,7 +12,39 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
-    /* Baby Pink Theme */
+   
+   :root {
+        --primary-pink: #ffb3c6;
+        --secondary-pink: #ff8fab;
+        --accent-pink: #ff5c8a;
+        --soft-pink-bg: #fff0f6;
+    }
+
+    body {
+        background-color: var(--soft-pink-bg);
+    }
+
+    /* Navbar Styling */
+    .custom-navbar {
+        background: linear-gradient(135deg, #ffe5ec, #ffd6e5) !important;
+        border-bottom: 2px solid var(--primary-pink);
+    }
+
+    .custom-navbar-brand span {
+        color: var(--accent-pink) !important;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+
+    .custom-navbar-links a {
+        color: var(--accent-pink) !important;
+        transition: all 0.3s ease;
+    }
+
+    .custom-navbar-links a:hover {
+        color: var(--secondary-pink) !important;
+        transform: translateY(-2px);
+    }
+/* Baby Pink Theme */
     .contact-section {
         background: #fff0f6;
         padding: 4rem 0;
@@ -72,24 +104,8 @@
         color: #ff85a2;
     }
 
-    /* Pink Navbar */
-    .custom-navbar {
-        background: #fff0f6 !important;
-        border-bottom: 1px solid #ffe5ec;
-    }
-
-    /* Pink Footer */
-    footer {
-        background: #ff6384 !important;
-    }
-
-    footer h5 {
-        color: #fff0f6 !important;
-    }
-
-    footer i {
-        color: #fff0f6 !important;
-    }
+    
+    
 </style>
 </head>
 <body>
@@ -99,7 +115,7 @@
       <div class="custom-navbar-container d-flex align-items-center justify-content-between">
        <!-- Updated Navbar Branding -->
       <!-- Updated Navbar Branding -->
-<a href="#" class="custom-navbar-brand">
+<a href="index.html" class="custom-navbar-brand">
   <span style="color: #000000; font-size: 1.8rem; margin-right: 5px;">Take</span>
   <img src="https://img.icons8.com/laces/64/wing.png" alt="Left Wing Icon" class="wing-reflection">
   <img src="https://img.icons8.com/laces/64/wing.png" alt="Right Wing Icon" class="wing-original">
@@ -197,50 +213,35 @@
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Footer Section -->
-<footer class="bg-dark text-light pt-5 pb-3">
-  <div class="container">
-    <div class="row">
-      <!-- Company Info -->
-      <div class="col-md-4 mb-4">
-        <h5 class="text-uppercase fw-bold">Bob the Builder</h5>
-        <p>Your trusted partner in event management, creating unforgettable experiences.</p>
-      </div>
-      
-      <!-- Contact Info -->
-      <div class="col-md-4 mb-4">
-        <h5 class="text-uppercase fw-bold">Contact Us</h5>
-        <ul class="list-unstyled">
-          <li><i class="bi bi-envelope"></i> Email: <a href="mailto:contact@bobthebuilder.com" class="text-light">contact@bobthebuilder.com</a></li>
-          <li><i class="bi bi-geo-alt"></i> Address: South Ex, New Delhi, India</li>
-          <li><i class="bi bi-telephone"></i> Phone: +91 1234567890</li>
-        </ul>
-      </div>
-
-      <!-- Google Map -->
-      <div class="col-md-4">
-        <h5 class="text-uppercase fw-bold">Our Location</h5>
-        <div class="ratio ratio-16x9">
-          <!-- Replace the src with your actual Google Maps embed link -->
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14029.368918350263!2d77.2234219!3d28.57075665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3914dc2fa57%3A0x24dd0c046e937580!2sSouth%20Ex%2C%20New%20Delhi%2C%20India!5e0!3m2!1sen!2sin!4v1700000000000" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  <footer class="bg-dark text-light pt-5 pb-3">
+    <div class="container">
+      <div class="row">
+        <!-- Company Info -->
+        <div class="col-md-4 mb-4">
+          <h5 class="text-uppercase fw-bold">Bob the Builder</h5>
+          <p>Your trusted partner in event management, creating unforgettable experiences.</p>
+        </div>
+        
+        <!-- Contact Info -->
+        <div class="col-md-4 mb-4">
+          <h5 class="text-uppercase fw-bold">Contact Us</h5>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-envelope"></i> Email: <a href="mailto:contact@bobthebuilder.com">contact@bobthebuilder.com</a></li>
+            <li><i class="bi bi-geo-alt"></i> Address: South Ex, New Delhi, India</li>
+            <li><i class="bi bi-telephone"></i> Phone: +91 1234567890</li>
+          </ul>
+        </div>
+  
+        <!-- Google Map -->
+        <div class="col-md-4">
+          <h5 class="text-uppercase fw-bold">Our Location</h5>
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14029.368918350263!2d77.2234219!3d28.57075665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3914dc2fa57%3A0x24dd0c046e937580!2sSouth%20Ex%2C%20New%20Delhi%2C%20India!5e0!3m2!1sen!2sin!4v1700000000000" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
         </div>
       </div>
     </div>
-
-    <!-- Company Info -->
-<div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-  <!-- content -->
-</div>
-
-<!-- Contact Info -->
-<div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-  <!-- content -->
-</div>
-
-<!-- Google Map -->
-<div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-  <!-- map -->
-</div>
-</footer>
+  </footer>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init({
