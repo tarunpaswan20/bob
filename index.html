@@ -11,21 +11,122 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
   <style>
-    body {
-      background-image: url('https://images.pexels.com/photos/695644/pexels-photo-695644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-      background-size: cover; /* Ensures the image covers the entire body */
-      background-position: center center; /* Centers the image */
-      background-attachment: fixed; /* Keeps the image fixed during scrolling */
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      /* This ensures the text is readable on top of the background */
+    /* Baby Pink Theme */
+    :root {
+        --primary-pink: #ffb3c6;
+        --secondary-pink: #ff8fab;
+        --accent-pink: #ff5c8a;
+        --soft-pink-bg: #fff0f6;
     }
 
-    
+    body {
+        background-color: var(--soft-pink-bg);
+    }
 
-  
-  </style>
+    /* Navbar Styling */
+    .custom-navbar {
+        background: linear-gradient(135deg, #ffe5ec, #ffd6e5) !important;
+        border-bottom: 2px solid var(--primary-pink);
+    }
+
+    .custom-navbar-brand span {
+        color: var(--accent-pink) !important;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+
+    .custom-navbar-links a {
+        color: var(--accent-pink) !important;
+        transition: all 0.3s ease;
+    }
+
+    .custom-navbar-links a:hover {
+        color: var(--secondary-pink) !important;
+        transform: translateY(-2px);
+    }
+
+    /* Carousel Styling */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: var(--accent-pink);
+        border-radius: 50%;
+        padding: 15px;
+    }
+
+    .btn-primary {
+        background: var(--accent-pink);
+        border: none;
+        padding: 12px 30px;
+        transition: all 0.3s ease;
+    }
+
+    .btn-primary:hover {
+        background: var(--secondary-pink);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(255,92,138,0.3);
+    }
+
+    /* Showcase & Highlight Sections */
+    .showcase-section, .highlight-section {
+        background: linear-gradient(135deg, #fff9fb, #fff5f7);
+        border-radius: 15px;
+        margin: 2rem;
+        box-shadow: 0 5px 20px rgba(255,133,162,0.1);
+    }
+
+    .highlight-section {
+        border: 2px solid var(--primary-pink);
+    }
+
+    /* Social Icons */
+    #social-icons {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+
+    .social-icon img {
+        transition: transform 0.3s ease;
+        filter: drop-shadow(2px 2px 4px rgba(255,92,138,0.2));
+    }
+
+    .social-icon:hover img {
+        transform: scale(1.1) rotate(-10deg);
+    }
+
+    /* Footer Styling */
+    footer {
+        background: linear-gradient(135deg, var(--secondary-pink), var(--accent-pink)) !important;
+        color: #fff0f6 !important;
+        border-top: 3px solid var(--primary-pink);
+    }
+
+    footer h5 {
+        color: #fff0f6 !important;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+
+    footer a {
+        color: #ffe5ec !important;
+        transition: all 0.3s ease;
+    }
+
+    footer a:hover {
+        color: white !important;
+        text-decoration: none;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .showcase-section, .highlight-section {
+            margin: 1rem;
+        }
+        
+        .carousel-item h1 {
+            font-size: 2rem;
+        }
+    }
+</style>
 </head>
 
 <body>
@@ -37,7 +138,7 @@
       <div class="custom-navbar-container d-flex align-items-center justify-content-between">
        <!-- Updated Navbar Branding -->
       <!-- Updated Navbar Branding -->
-<a href="#" class="custom-navbar-brand">
+<a href="index.html" class="custom-navbar-brand">
   <span style="color: #000000; font-size: 1.8rem; margin-right: 5px;">Take</span>
   <img src="https://img.icons8.com/laces/64/wing.png" alt="Left Wing Icon" class="wing-reflection">
   <img src="https://img.icons8.com/laces/64/wing.png" alt="Right Wing Icon" class="wing-original">
@@ -93,7 +194,7 @@
       <!-- Slide 2 -->
       <div class="carousel-item">
         <div class="hero-slide d-flex align-items-center"
-          style="background: url('pool-party-1.jpg') no-repeat center center/cover; height: 600px;">
+          style="background: url('pool-party-3.jpg') no-repeat center center/cover; height: 600px;">
           <div class="container text-center text-white">
             <h1 class="display-4 fw-bold" data-aos="fade-up">Celebrate With Us</h1>
             <p class="lead mt-3" data-aos="fade-up" data-aos-delay="300">Your perfect event starts here.</p>
