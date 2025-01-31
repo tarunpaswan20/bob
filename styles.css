@@ -7,18 +7,29 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+  background-color: var(--soft-pink-bg);
 }
 
+    /* Navbar Styling */
+    .custom-navbar {
+      background: linear-gradient(135deg, #ffe5ec, #ffd6e5) !important;
+      border-bottom: 2px solid var(--primary-pink);
+  }
+  .custom-navbar-brand span {
+    color: var(--accent-pink) !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
 .custom-navbar {
   position: sticky;
   top: 0;
   width: 100%;
-  background: #fff0f6 !important;
-  border-bottom: 1px solid #ffe5ec;
+ 
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   padding: 30px 0;
+  
 }
+
 .custom-navbar-container {
   display: flex;
   align-items: center;
@@ -56,11 +67,14 @@ body {
   text-decoration: none;
   color: #333;
   font-size: 1.2rem;
-  transition: color 0.3s ease;
+  
+  color: var(--accent-pink) !important;
+  transition: all 0.3s ease;
 }
 
 .custom-navbar-links a:hover {
-  color: #ff6f61;
+  color: var(--secondary-pink) !important;
+  transform: translateY(-2px);
 }
 
 /* Dropdown Button for Small Screens */
@@ -326,3 +340,55 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Adds a subtle glow for better visibility */
 }
 
+ /* Baby Pink Footer */
+    footer {
+        background: linear-gradient(135deg, #d86d98, #d86d98) !important;
+        color: #fff0f6 !important;
+        padding: 2rem 0;
+    }
+
+    footer h5 {
+        color: #fff0f6 !important;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+    }
+
+    footer a {
+        color: #fff0f6 !important;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    footer a:hover {
+        color: #ffe5ec !important;
+        text-decoration: underline;
+    }
+
+    footer .bi {
+        margin-right: 0.5rem;
+        color: #fff0f6 !important;
+    }
+
+    footer .list-unstyled li {
+        margin-bottom: 0.75rem;
+    }
+
+    footer .ratio {
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(255,133,162,0.2);
+    }
+
+    footer .container {
+        padding: 0 1rem;
+    }
+
+    /* Responsive Footer */
+    @media (max-width: 768px) {
+        footer .col-md-4 {
+            margin-bottom: 2rem;
+        }
+
+        footer h5 {
+            font-size: 1.25rem;
+        }
