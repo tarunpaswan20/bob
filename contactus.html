@@ -104,7 +104,28 @@
         color: #ff85a2;
     }
 
+    /* Additions to existing styles */
     
+    /* Animated Wings */
+    .wing-original {
+      transition: transform 0.4s ease-in-out;
+      animation: float 3s ease-in-out infinite;
+    }
+    .wing-reflection {
+      transform: scaleX(-1);
+      opacity: 0.6;
+      animation: floatMirror 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(-5deg); }
+      50% { transform: translateY(-10px) rotate(5deg); }
+    }
+    @keyframes floatMirror {
+      0%, 100% { transform: scaleX(-1) translateY(0) rotate(-5deg); }
+      50% { transform: scaleX(-1) translateY(-10px) rotate(5deg); }
+    }
+
+    /* New Interactive Elements */
     
 </style>
 </head>
