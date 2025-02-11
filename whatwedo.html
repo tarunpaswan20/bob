@@ -181,6 +181,56 @@
             font-size: 2rem;
         }
     }
+    /* Additions to existing styles */
+    
+    /* Animated Wings */
+    .wing-original {
+      transition: transform 0.4s ease-in-out;
+      animation: float 3s ease-in-out infinite;
+    }
+    .wing-reflection {
+      transform: scaleX(-1);
+      opacity: 0.6;
+      animation: floatMirror 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(-5deg); }
+      50% { transform: translateY(-10px) rotate(5deg); }
+    }
+    @keyframes floatMirror {
+      0%, 100% { transform: scaleX(-1) translateY(0) rotate(-5deg); }
+      50% { transform: scaleX(-1) translateY(-10px) rotate(5deg); }
+    }
+ /* Testimonials Section */
+ .testimonials {
+      background: #fff;
+      padding: 60px 0;
+    }
+    .testimonial {
+      background: var(--soft-pink-bg);
+      padding: 30px;
+      border-radius: 15px;
+      position: relative;
+      margin: 20px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+    }
+    .testimonial::before {
+      content: "“";
+      font-size: 4rem;
+      color: var(--accent-pink);
+      position: absolute;
+      top: -20px;
+      left: 20px;
+    }
+    .testimonial p {
+      font-style: italic;
+      margin-bottom: 15px;
+    }
+    .testimonial h6 {
+      font-weight: bold;
+      color: var(--accent-pink);
+      text-align: right;
+    }
   </style>
 </head>
 
@@ -286,6 +336,33 @@
       </div>
   </div>
 </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos="fade-up">Testimonials</h2>
+      <div class="row">
+        <div class="col-md-4" data-aos="fade-right" data-aos-delay="100">
+          <div class="testimonial">
+            <p>The team at TakeEvent made our corporate event a grand success. Their attention to detail and creativity exceeded our expectations!</p>
+            <h6>- Alex D.</h6>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="testimonial">
+            <p>I couldn’t have asked for a better birthday celebration for my daughter. The decoration and overall ambience were simply magical!</p>
+            <h6>- Maria S.</h6>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-left" data-aos-delay="300">
+          <div class="testimonial">
+            <p>From concept to execution, TakeEvent delivered an experience that left a lasting impression on everyone at our product launch.</p>
+            <h6>- James K.</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <script src="script.js"></script>
 
